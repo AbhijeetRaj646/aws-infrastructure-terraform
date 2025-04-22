@@ -35,3 +35,29 @@ EKS Cluster with node group
 
 IAM roles and Kubernetes access setup
 
+
+🧱 Modules
+vpc/: Manages networking (VPC, subnets, routes, IGW/NAT)
+
+ec2/: Launches EC2 instances with AMI, user data, and security
+
+eks/ (only in EKS folder): Provisions EKS Cluster and node groups
+
+⚙️ Prerequisites
+AWS CLI configured
+
+Terraform v1.3 or newer
+
+IAM permissions to create VPC, EC2, EKS, and IAM roles
+
+🧼 Cleanup
+bash
+Copy
+Edit
+terraform destroy
+🤝 Contributions
+Contributions are welcome! Please open an issue or PR for improvements or bug fixes.
+
+Let me know if you'd like this version to include images, example `terraform.tfvars`, or badges at the top!
+
+
